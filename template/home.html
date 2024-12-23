@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{% static 'home.css' %}">
 </head>
 <body>
-    <h1>This is my home</h1>
+    <h1>{{data}}</h1>
+    <a href="{% url 'login' %}"><button type="button">Login</button></a>
 </body>
 </html>

@@ -3,7 +3,8 @@ from django.shortcuts import render
 # Create your views here.
 
 def home(request):
-    return render(request,'home.html')
+    v = "This is my new home page"
+    return render(request,'home.html',{'data':v})
 
 def login(request):
     return render(request,'login.html')
